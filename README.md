@@ -23,9 +23,9 @@ This fork fixes the known issues with the original repo, as well as updates the 
 
 @TODO Update examples
 
-**Requires:** PHP >= 5.3
+**Requires:** PHP >= 5.4
 
-A PayPal Instant Payment Notification (IPN) class for PHP >= 5.3 (if you aren't on at least 5.3, then I can't help you! I will not support dead versions!)
+A PayPal Instant Payment Notification (IPN) class for PHP >= 5.4 (if you aren't on at least 5.4, then I can't help you! I will not support dead versions!)
 
 Use the `IpnListener` class in your PHP IPN script to handle the encoding of POST data, post back to PayPal, and parsing of the response from PayPal.
 
