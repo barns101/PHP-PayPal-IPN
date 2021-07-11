@@ -44,6 +44,7 @@ composer.json
         }
     }
 
+PHP implementation:
 
     use wadeshuler\paypalipn\IpnListener;
     $listener = new IpnListener();
