@@ -323,12 +323,7 @@ class IpnListener
             $req = 'cmd=_notify-validate';
 
             foreach ($myPost as $key => $value) {
-                if (function_exists('get_magic_quotes_gpc') && get_magic_quotes_gpc() == 1) {
-                    $value = urlencode(stripslashes($value));
-                } else {
-                    $value = urlencode($value);
-                }
-                $req .= "&$key=$value";
+                $req .= "&{$key}=" . urlencode($value);
             }
 
             if ($this->use_curl) {
